@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "ShareTech";
+    src: 
+        url(assets/sharetechmono-regular-webfont.woff2) format(woff2),
+        url(assets/sharetechmono-regular-webfont.woff) format(woff);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    flex: 1 0 auto;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 20vh;
+    padding-bottom: 16px;
+}
+
+.sidebar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-image {
+    width: 150px;
+}
+
+.sidebar-title {
+    color: white;
+    font-size: 4rem;
+    font-family: ShareTech;
+}
+
+.sidebar-footer {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+}
+
+.sidebar-footer a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+
+
+
+
