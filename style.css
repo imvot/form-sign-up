@@ -84,20 +84,44 @@ body {
 
 .form-label {
     flex: 1 1 200px;
+    position: relative;
 }
 
 .form-input {
+    border-radius: 2px;
     width: 100%;
     display: block;
     border: #E5E7EB solid 2px;
     font-size: 1rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     height: 40px;
+    padding-left: 12px;
+}
+
+.form-input:focus {
+    outline: #191825 solid 2px;
 }
 
 .form-label > span {
    font-size: 1rem; 
-   opacity: 0.7;
+   opacity: 0.5;
+   position: absolute;
+   top: 12px;
+   left: 12px;
+   transition: 
+     opacity 100ms ease-in,
+     top 100ms ease-in,
+     left 100ms ease-in,
+     font-size 100ms ease-in;
+}
+
+.form-input:focus + span,
+.form-input:not(:placeholder-shown) + span {
+    opacity: 1;
+    top: -8px;
+    left: 5px;
+    font-size: 0.7rem;
+    background-color: white;
 }
 
 .form-buttons {
