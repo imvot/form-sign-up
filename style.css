@@ -102,7 +102,9 @@ body {
     outline: #191825 solid 2px;
 }
 
-.form-input:invalid:not(:placeholder-shown) {
+.form-input:invalid:not(:placeholder-shown),
+.form-input[type=password].invalid,
+.form-input:invalid.invalid {
     border: #F45050 solid 2px;
     outline: none;
 }
